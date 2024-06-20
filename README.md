@@ -32,3 +32,5 @@ The server folder contains a node.js server using express. To run the server, fo
 The application should connect to the default server port (3042) automatically!
 
 Hint - Use nodemon instead of node to automatically restart the server on any changes.
+
+![pic1](https://github.com/Rahul65911/ecdsa-node/assets/94047697/94eca54a-4ca5-4e09-82f9-807d43b9976c)
