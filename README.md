@@ -2,6 +2,16 @@
 This project is an example of using a client and server to facilitate transfers between different addresses.
 By using Elliptic Curve Digital Signatures we can make it so the server only allows transfers that have been signed for by the person who owns the associated address.
 
+### Signature
+
+##### Client side
+We have taken private key of the user and used that key for signing the hex message that contains sender address, recipient address, amount and nonce.
+nonce is used for restricting the 'Replay Attack'.
+
+##### Server side
+On server side we do not send the private key due to security concern, that's why we have sent signed message and the original hex message that will be used for recovering the account address.
+After the address is retrieved, the funds can be send to the recipient address if sender has enough funds.
+
 ### Client
 
 The client folder contains a react app using vite. To get started, follow these steps:
